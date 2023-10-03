@@ -1,0 +1,125 @@
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('img/fondo-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+header .contenedor-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 60%;
+}
+
+header .contenedor-titulo button,
+footer button{
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    border: none;
+    width: 130px;
+}
+
+header .contenedor-titulo button{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header .contenedor-titulo h2{
+    font-size: 42px;
+}
+
+.contenedor-titulo p{
+    font-size: 19px;
+}
+
+header .circulo-verde{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    background-color: #00BF63;
+    color: #ffffff;
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    margin-bottom: 70px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+main .contenedor-padre-sillas{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 40px 0 40px 0;
+}
+
+main .contenedor-silla{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 230px;
+    height: 400px;
+}
+
+.contenedor-silla .silla img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.contenedor-silla .contenedor-span span{
+    font-weight: bold;
+}
+
+.contenedor-silla .contenedor-span span:first-child{
+    text-decoration: 2px red line-through;
+}
+
+main .contenedor-silla .silla{
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    height: 80%;
+    width: 100%;
+    background: linear-gradient(to top, rgb(196, 196, 196) , 30%, #ffffff );
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 97%;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+footer button{
+    background-color: #00BF63;
+    color: #ffffff;
+}
